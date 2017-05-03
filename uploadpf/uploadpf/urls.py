@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
     url(r'^photologue/', include('photologue.urls', namespace='photologue')),
+    url(r'^forms/', include('djangocms_forms.urls')),
 ]
 
 urlpatterns += i18n_patterns(

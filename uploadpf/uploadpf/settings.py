@@ -141,6 +141,7 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
+    'djangocms_forms',
     'uploadpf',
     'photologue',
     'sortedm2m',
@@ -203,3 +204,14 @@ THUMBNAIL_PROCESSORS = (
     'filer.thumbnail_processors.scale_and_crop_with_subject_location',
     'easy_thumbnails.processors.filters'
 )
+
+# DJANGOCMS_FORMS_RECAPTCHA_PUBLIC_KEY = '<recaptcha_site_key>'
+# DJANGOCMS_FORMS_RECAPTCHA_SECRET_KEY = '<recaptcha_secret_key>'
+
+DJANGOCMS_FORMS_PLUGIN_MODULE = ('Ввод пользовательских данных')
+DJANGOCMS_FORMS_PLUGIN_NAME = ('Форма')
+DJANGOCMS_FORMS_DEFAULT_TEMPLATE = 'djangocms_forms/form_template/default.html'
+DJANGOCMS_FORMS_TEMPLATES = (
+    ('djangocms_forms/form_template/default.html', ('Default')),
+)
+DJANGOCMS_FORMS_REDIRECT_DELAY = 10000  # 10 seconds
