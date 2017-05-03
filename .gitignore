@@ -99,3 +99,8 @@ venv/
 *.iml
 out
 gen
+Будет удалено ENVUploadPF/include/
+/ENVUploadPF/
+!/uploadpf/project.db
+!/uploadpf/requirements.txt
+!/uploadpf/manage.py
