@@ -15,6 +15,7 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
+    url(r'^photologue/', include('photologue.urls', namespace='photologue')),
 ]
 
 urlpatterns += i18n_patterns(

@@ -141,8 +141,12 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
-    'uploadpf'
+    'uploadpf',
+    'photologue',
+    'sortedm2m',
 )
+
+SITE_ID = 1
 
 LANGUAGES = (
     ## Customize this
@@ -168,9 +172,9 @@ CMS_LANGUAGES = {
 }
 
 CMS_TEMPLATES = (
-    ## Customize this
+    # Customize this
     ('page.html', 'Page'),
-    ('feature.html', 'Page with Feature')
+    ('feature.html', 'Page with Feature'),
 )
 
 CMS_PERMISSION = True
